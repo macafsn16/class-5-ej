@@ -1,7 +1,3 @@
-
-//document.getElementById("MyApp").innerHTML = "Miguel";
-
-
 class Button {
     constructor(parentID, text) {
         this.parentID = parentID;
@@ -10,36 +6,22 @@ class Button {
 
    render() {
         let myApp = document.getElementById(this.parentID);
-
         const myButtonHTML = myApp.innerHTML + "<button>" + this.text + "</button>";
-
         myApp.innerHTML = myButtonHTML; 
 
     }
 }
 
- let myButon = new Button ("MyApp", "logearse aqui...");
- myButon.render(); 
- 
- let myButon2 = new Button ("MyApp", "Contraseña");
- myButon2.render();
-
- //////////////////////
-
  class Input{
     constructor(parentID, type) {
-
         this.parentID = parentID;
-
         this.type = type;
  }
 
  render() {
     
     let myApp = document.getElementById(this.parentID);
-
     const myInputHTML = myApp.innerHTML + "<input type=" + this.type + ">";
-
     myApp.innerHTML = myInputHTML; 
 
  }
